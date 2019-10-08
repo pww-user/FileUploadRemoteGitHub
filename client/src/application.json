@@ -1,0 +1,9 @@
+{
+  "name": "FileUploadRemoteGitHub",
+  "description": "",
+  "defaultLayout": "PhonePortrait",
+  "previewToken": "7f80e1f9",
+  "clientVersion": "6.0.30",
+  "theme": "Anchor",
+  "creatorId": "admin"
+}

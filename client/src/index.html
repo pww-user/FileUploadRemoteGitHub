@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Application</title>
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="format-detection" content="telephone=no" />
+
+  <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4e8ef7">
+
+  <!-- cordova.js required for cordova apps -->
+  <script src="cordova.js"></script>
+
+  <link href="build/main.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Ionic's root component and where the app will load -->
+  <ion-app>
+    <!-- START: Screen to show while app is loading -->
+    <style>
+      @keyframes zoomIn { 0% { opacity: 0; transform: scale3d(.3,.3,.3) } 50% { opacity: 1 } }
+    </style>
+    <div style="height:100%;background: white; color: black; font-size: 12px; display: flex; justify-content: center; font-family: sans-serif;">
+      <h1 style="align-self: center;text-align: center;">
+        <p style="font-size:30px;">&nbsp;</p>
+        <p>Loading App</p>
+        <p style="font-size:30px;animation-iteration-count:infinite;animation-name: zoomIn;animation-duration: 1s;animation-fill-mode: both;">
+          <span style="color:#009bde">&#9679;</span>&nbsp;
+          <span style="color:#6cc04a">&#9679;</span>&nbsp;
+          <span style="color:#1e428a">&#9679;</span>
+        </p>
+      </h1>
+    </div>
+    <!-- END: Screen to show while app is loading -->
+  </ion-app>
+
+  <!-- The polyfills js is generated during the build process -->
+  <script src="build/polyfills.js"></script>
+
+  <!-- The bundle js is generated during the build process -->
+  <script src="build/vendor.js"></script>
+  <script src="build/main.js"></script>
+
+</body>
+</html>

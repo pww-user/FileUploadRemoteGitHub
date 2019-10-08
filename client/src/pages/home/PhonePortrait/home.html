@@ -1,0 +1,77 @@
+<ion-header data-comp-id="header.1">
+    <ion-navbar color="primary" data-comp-id="navbar.1" style="">
+        <ion-buttons data-comp-id="buttons.1" left="">
+            <button data-comp-id="button.1" icon-only="" ion-button="" menuToggle="">
+                <ion-icon class="ion-ios-menu" name="menu"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title data-comp-id="title.1">
+            <span data-comp-id="text.1" ion-text="">Upload File</span>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content data-comp-id="content.1">
+    <ion-list data-comp-id="list.1">
+        <ion-list-header color="dark" data-comp-id="list-header.1" style="">
+            <span data-comp-id="text.2" ion-text="">File Type</span>
+        </ion-list-header>
+        <div class="container-black" data-comp-id="div.1" style="">
+            <ion-item data-comp-id="toggle.1">
+                <ion-label color="black" style="">Photo</ion-label>
+                <ion-toggle (ionChange)="onTypeChange()" [(ngModel)]="isPhoto"></ion-toggle>
+            </ion-item>
+            <ion-item data-comp-id="input.1">
+                <ion-label>New Folder Name</ion-label>
+                <ion-input [(ngModel)]="data.newSubFolderName" placeholder="Type here..."
+                    type="text"></ion-input>
+            </ion-item>
+            <ion-item class="wrap-field" data-comp-id="select.1">
+                <ion-label>Upload To</ion-label>
+                <ion-select [(ngModel)]="data.subFolder.selected"
+                    [selectOptions]="{cssClass: 'select-full'}" interface="alert">
+                    <ion-option *ngFor="let item of data.subFolder.options" [innerHTML]="item.label"
+                        [value]="item.value" data-comp-id="option.1"></ion-option>
+                </ion-select>
+            </ion-item>
+            <ion-item *ngIf="!isPhoto" data-comp-id="attachment.1">
+                <ion-label>
+                    <span class="label">Attachment</span>
+                    <span class="input"><input [(ngModel)]="data.file" file-upload="" type="file"></span>
+                </ion-label>
+                <ion-icon color="primary" item-end="" name="attach"></ion-icon>
+            </ion-item>
+            <div *ngIf="isPhoto" [(data)]="data.file" data-comp-id="take-photo.1"
+                take-photo="">
+                <ion-item>
+                    <ion-thumbnail item-right="">
+                        <img #thumbnail="">
+                    </ion-thumbnail>
+                    <ion-label>
+                        <span class="label required">Take Photo</span>
+                        <input #file="" accept="image/*" capture="camera" class="fallback-input"
+                            type="file">
+                    </ion-label>
+                    <ion-icon color="primary" item-end="" name="camera"></ion-icon>
+                </ion-item>
+                <camera-canvas></camera-canvas>
+            </div>
+        </div>
+        <ion-list-header color="dark" data-comp-id="list-header.2" style="">
+            <span data-comp-id="text.3" ion-text="">Your Info</span>
+        </ion-list-header>
+        <ion-item data-comp-id="input.2">
+            <ion-label class=" required">Email</ion-label>
+            <ion-input [(ngModel)]="data.email" placeholder="Type here..." type="text"></ion-input>
+        </ion-item>
+        <ion-item data-comp-id="input.3">
+            <ion-label class=" required">Name</ion-label>
+            <ion-input [(ngModel)]="data.firstName" placeholder="Type here..." type="text"></ion-input>
+        </ion-item>
+    </ion-list>
+    <div data-comp-id="div.2" style="margin: 10% 10px;">
+        <button (click)="action('beginUpload')" block="" data-comp-id="button.2"
+            ion-button="">
+            <span>Upload</span>
+        </button>
+    </div>
+</ion-content>

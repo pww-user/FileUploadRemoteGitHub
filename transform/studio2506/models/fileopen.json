@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "isFileOpen": {
+      "type": "identifier",
+      "control": "url.https://encodable.com/uploaddemo/files/"
+    },
+    "content": {
+      "type": "string",
+      "control": "property.innerHTML",
+      "selector": "body"
+    }
+  },
+  "connect": [
+    {
+      "match": [
+        "isFileOpen"
+      ],
+      "event": "fileopen"
+    }
+  ],
+  "id": "fileopen"
+}

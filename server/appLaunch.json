@@ -1,0 +1,16 @@
+{
+	"remoteAppConfig": {
+		"loginType": "process",
+		"cmd": "node",
+		"args": ["<%= transformAppsDir %>/<%= appId %>/server/index.js", "--sessionID", ":sessionID" ],
+		"dependencies": {
+			"chrome": "71"
+		}
+	},
+	"appData": {
+		"appType": "local",
+		"appZip": "<%= staticStorage %><%= appId %>/client.zip",
+		"sessionCheck": false,
+		"smartuxApp": "<%= staticStorage %><%= appId %>/smartuxApp.json"
+	}
+}

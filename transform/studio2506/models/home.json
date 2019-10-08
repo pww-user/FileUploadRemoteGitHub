@@ -1,0 +1,60 @@
+{
+  "type": "object",
+  "comment": "Blank",
+  "properties": {
+    "file": {
+      "type": "file",
+      "selector": "input[id='uploadname1']"
+    },
+    "uploadTo": {
+      "type": "select",
+      "control": "select",
+      "selector": "select"
+    },
+    "newSubFolderName": {
+      "type": "string",
+      "control": "text",
+      "selector": "input[id='newsubdir1']"
+    },
+    "email": {
+      "type": "string",
+      "control": "text",
+      "selector": "input[id='formfield-email_address']"
+    },
+    "firstName": {
+      "type": "string",
+      "control": "text",
+      "selector": "input[id='formfield-first_name']"
+    },
+    "isUploadPage": {
+      "type": "identifier",
+      "control": "exists",
+      "selector": "input.upform_field[type='file']"
+    },
+    "beginUpload": {
+      "type": "action",
+      "control": "action.click",
+      "selector": "input[id='uploadbutton']"
+    },
+    "viewUploaded": {
+      "type": "action",
+      "selector": "a",
+      "selectContains": "View Uploaded Files",
+      "control": "action.click"
+    },
+    "subFolder": {
+      "type": "select",
+      "control": "select",
+      "selector": "select"
+    }
+  },
+  "id": "home",
+  "connect": [
+    {
+      "match": [
+        "isUploadPage"
+      ],
+      "event": "home"
+    }
+  ]
+}

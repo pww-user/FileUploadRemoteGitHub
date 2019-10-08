@@ -1,0 +1,43 @@
+{
+  "id": "__BASE__",
+  "name": "FileUploadRemoteGitHub",
+  "screens": [
+    {
+      "id": "home",
+      "name": "Home",
+      "sourceScreenId": "home",
+      "sourceAppId": "FileUpload"
+    },
+    {
+      "id": "uploadcomplete",
+      "name": "uploadcomplete",
+      "sourceScreenId": "uploadcomplete",
+      "sourceAppId": "FileUpload"
+    },
+    {
+      "id": "uploaded",
+      "name": "uploaded",
+      "sourceScreenId": "uploaded",
+      "sourceAppId": "FileUpload"
+    },
+    {
+      "id": "fileopen",
+      "name": "fileopen",
+      "sourceScreenId": "fileopen",
+      "sourceAppId": "FileUpload"
+    },
+    {
+      "id": "landing",
+      "name": "Landing",
+      "sourceScreenId": "landing",
+      "sourceAppId": "FileUpload"
+    },
+    {
+      "id": "login",
+      "name": "Login",
+      "sourceScreenId": "login",
+      "sourceAppId": "FileUpload"
+    }
+  ],
+  "startScreen": "login"
+}

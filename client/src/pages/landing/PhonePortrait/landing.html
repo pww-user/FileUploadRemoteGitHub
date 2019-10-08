@@ -1,0 +1,23 @@
+<ion-header data-comp-id="header.1">
+    <ion-navbar color="primary" data-comp-id="navbar.1" style="">
+        <ion-buttons data-comp-id="buttons.1" left="">
+            <button (click)="action('back')" data-comp-id="icon-button.1" icon-only=""
+                ion-button="">
+                <ion-icon class="ion-ios-arrow-back"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title data-comp-id="title.1">
+            <span data-comp-id="text.1" ion-text="">View File</span>
+        </ion-title>
+        <ion-buttons data-comp-id="buttons.2" right=""></ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content data-comp-id="content.1">
+    <ion-list data-comp-id="list.1">
+        <ion-item (click)="action('go')" data-comp-id="item.1">
+            <div data-comp-id="text.2" ion-text="">{{data.name}}</div>
+            <ion-icon class="ion-ios-arrow-forward" color="primary" data-comp-id="icon.1"
+                item-end="" style=""></ion-icon>
+        </ion-item>
+    </ion-list>
+</ion-content>

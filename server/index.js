@@ -1,0 +1,12 @@
+const session = require('smartux-connect');
+session.transform.studio2506 = session.loadTransform('studio2506');
+require('./client');
+require('./client/menu');
+require('./transform/studio2506/landing');
+require('./client/landing');
+require('./client/fileopen');
+require('./transform/studio2506/fileopen');
+require('./transform/studio2506/uploaded');
+require('./client/uploaded');
+require('./transform/studio2506/uploadcomplete');
+session.start();

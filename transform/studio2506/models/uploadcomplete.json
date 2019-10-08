@@ -1,0 +1,56 @@
+{
+  "type": "object",
+  "properties": {
+    "isComplete": {
+      "type": "identifier",
+      "control": "exists",
+      "selector": "dt[class='first']",
+      "selectContains": "Your upload is complete:"
+    },
+    "back": {
+      "type": "action",
+      "control": "action.click",
+      "selector": "a[href='/uploaddemo/']"
+    },
+    "summary": {
+      "type": "string",
+      "control": "property.innerText",
+      "selector": "dl"
+    },
+    "inProgress": {
+      "type": "identifier",
+      "control": "exists",
+      "selector": "div[id='progStatus']",
+      "selectContains": "Uploading; please wait."
+    },
+    "uploadedLink": {
+      "type": "action",
+      "control": "action.click",
+      "selector": "dl a"
+    },
+    "filename": {
+      "type": "string",
+      "selector": "dl a",
+      "control": "property.innerText"
+    },
+    "progressPercent": {
+      "type": "string",
+      "control": "property.innerHTML",
+      "selector": "div[id='progPercent']"
+    }
+  },
+  "connect": [
+    {
+      "match": [
+        "inProgress"
+      ],
+      "event": "inprogress"
+    },
+    {
+      "match": [
+        "isComplete"
+      ],
+      "event": "uploadcomplete"
+    }
+  ]
+}

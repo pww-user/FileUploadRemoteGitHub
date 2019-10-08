@@ -1,0 +1,200 @@
+{
+  "menu": {
+    "type": "object",
+    "properties": {
+      "files": {
+        "type": "action"
+      },
+      "upload": {
+        "type": "action"
+      }
+    },
+    "id": "menu",
+    "sourcePath": "menu"
+  },
+  "home": {
+    "type": "object",
+    "comment": "Blank",
+    "properties": {
+      "file": {
+        "type": "file"
+      },
+      "uploadTo": {
+        "type": "select"
+      },
+      "newSubFolderName": {
+        "type": "string"
+      },
+      "email": {
+        "type": "string"
+      },
+      "firstName": {
+        "type": "string"
+      },
+      "beginUpload": {
+        "type": "action"
+      },
+      "viewUploaded": {
+        "type": "action"
+      },
+      "subFolder": {
+        "type": "select"
+      }
+    },
+    "id": "home",
+    "sourcePath": "home"
+  },
+  "uploadcomplete": {
+    "type": "object",
+    "comment": "uploadcomplete",
+    "properties": {
+      "back": {
+        "type": "action"
+      },
+      "summary": {
+        "type": "string",
+        "update": {
+          "type": "none"
+        }
+      },
+      "uploadedLink": {
+        "type": "action"
+      },
+      "filename": {
+        "type": "string"
+      }
+    },
+    "sourcePath": "uploadcomplete",
+    "id": "uploadcomplete"
+  },
+  "uploaded": {
+    "type": "object",
+    "comment": "uploaded",
+    "properties": {
+      "files": {
+        "type": "array",
+        "id": "uploaded.files",
+        "name": "files",
+        "element": {
+          "0": {},
+          "context": {},
+          "length": 1
+        },
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "id": "uploaded.files.name",
+              "name": "name",
+              "element": {
+                "0": {},
+                "context": {},
+                "length": 1
+              },
+              "pageModelName": "uploaded",
+              "update": {
+                "type": "none"
+              }
+            },
+            "download": {
+              "type": "action",
+              "id": "uploaded.files.download",
+              "name": "download",
+              "element": {
+                "0": {},
+                "context": {},
+                "length": 1
+              },
+              "pageModelName": "uploaded"
+            }
+          }
+        },
+        "pageModelName": "uploaded",
+        "update": {
+          "type": "none"
+        }
+      },
+      "folders": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "update": {
+                "type": "none"
+              }
+            },
+            "openFolder": {
+              "type": "action"
+            }
+          }
+        }
+      },
+      "path": {
+        "type": "string"
+      },
+      "isSubDir": {
+        "type": "boolean"
+      },
+      "back": {
+        "type": "action"
+      }
+    },
+    "id": "uploaded",
+    "sourcePath": "uploaded"
+  },
+  "fileopen": {
+    "type": "object",
+    "comment": "Blank",
+    "properties": {
+      "content": {
+        "type": "string"
+      },
+      "back": {
+        "type": "action"
+      }
+    },
+    "id": "fileopen",
+    "sourcePath": "fileopen"
+  },
+  "landing": {
+    "type": "object",
+    "comment": "Blank",
+    "properties": {
+      "go": {
+        "type": "action"
+      },
+      "name": {
+        "type": "string",
+        "update": {
+          "type": "none"
+        }
+      },
+      "back": {
+        "type": "action"
+      }
+    },
+    "id": "landing",
+    "sourcePath": "landing"
+  },
+  "login": {
+    "type": "object",
+    "comment": "Login",
+    "properties": {
+      "login": {
+        "type": "action",
+        "parameters": {
+          "username": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "id": "login"
+  }
+}

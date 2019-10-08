@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "comment": "Blank",
+  "properties": {
+    "go": {
+      "type": "action",
+      "control": "action.click",
+      "selector": "#fcdownloadlinkdelayed a:last-of-type,\n#fc_content a:last-of-type"
+    },
+    "isLanding": {
+      "type": "identifier",
+      "control": "url.https://encodable.com/uploaddemo/?action=viewer"
+    },
+    "name": {
+      "type": "string",
+      "selector": "#fcdownloadlinkdelayed a:last-of-type,\n#fc_content a:last-of-type",
+      "control": "property.innerText"
+    },
+    "isLanding2": {
+      "type": "identifier",
+      "control": "url.https://encodable.com/cgi-bin/filechucker.cgi?action=landing"
+    }
+  },
+  "id": "landing",
+  "connect": [
+    {
+      "match": [
+        "isLanding",
+        "isLanding",
+        "isLanding"
+      ],
+      "event": "landing"
+    },
+    {
+      "match": [
+        "isLanding2"
+      ],
+      "event": "landing2"
+    }
+  ]
+}

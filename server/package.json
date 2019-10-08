@@ -1,0 +1,17 @@
+{
+  "name": "FileUploadRemoteGitHub",
+  "version": "6.0.30",
+  "private": true,
+  "description": "PowWow transformation",
+  "main": "start.js",
+  "scripts": {
+    "start": "nodemon start.js | bunyan -o short --color"
+  },
+  "dependencies": {
+    "smartux-connect": "c:\\Program Files\\SmartUX Studio\\dataStore\\smartux-connect\\6.0.30"
+  },
+  "engines": {
+    "node": "8.x.x"
+  },
+  "customConnectorsFolder": "c:\\ProgramData\\SmartUX Studio\\custom-connectors"
+}

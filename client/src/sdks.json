@@ -1,0 +1,56 @@
+[
+  {
+    "id": "cordova-plugin-whitelist",
+    "default": true
+  },
+  {
+    "id": "cordova-plugin-app-event",
+    "default": true
+  },
+  {
+    "id": "cordova-plugin-device",
+    "default": true
+  },
+  {
+    "id": "cordova-plugin-splashscreen",
+    "default": true
+  },
+  {
+    "id": "cordova-plugin-statusbar",
+    "default": true
+  },
+  {
+    "id": "ionic-plugin-keyboard",
+    "default": true
+  },
+  {
+    "id": "cordova-plugin-powwow",
+    "default": true
+  },
+  {
+    "id": "cordova-plugin-wkwebview-engine",
+    "default": true
+  },
+  {
+    "id": "cordova-plugin-wkwebviewxhrfix",
+    "default": true
+  },
+  {
+    "id": "cordova-plugin-camera"
+  },
+  {
+    "id": "cordova-plugin-file-transfer"
+  },
+  {
+    "id": "cordova-plugin-inappbrowser"
+  },
+  {
+    "id": "cordova-plugin-file-opener2"
+  },
+  {
+    "id": "cordova-plugin-x-socialsharing"
+  },
+  {
+    "id": "cordova-plugin-file"
+  }
+]

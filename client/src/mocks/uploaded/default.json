@@ -1,0 +1,301 @@
+{
+  "files": [
+    {
+      "$i": 0,
+      "name": "Amsel.jpg"
+    },
+    {
+      "$i": 1,
+      "name": "Amsel 01.jpg"
+    },
+    {
+      "$i": 2,
+      "name": "Anagni.jpg"
+    },
+    {
+      "$i": 3,
+      "name": "FIle txt 1 06.txt"
+    },
+    {
+      "$i": 4,
+      "name": "FIle txt 1 07.txt"
+    },
+    {
+      "$i": 5,
+      "name": "FIle txt 1 08.txt"
+    },
+    {
+      "$i": 6,
+      "name": "FIle txt 1 09.txt"
+    },
+    {
+      "$i": 7,
+      "name": "FIle txt 1 10.txt"
+    },
+    {
+      "$i": 8,
+      "name": "FIle txt 1 11.txt"
+    },
+    {
+      "$i": 9,
+      "name": "FIle txt 1 12.txt"
+    },
+    {
+      "$i": 10,
+      "name": "FIle txt 1 13.txt"
+    },
+    {
+      "$i": 11,
+      "name": "FIle txt 1 14.txt"
+    },
+    {
+      "$i": 12,
+      "name": "FIle txt 1 15.txt"
+    },
+    {
+      "$i": 13,
+      "name": "FIle txt 1 16.txt"
+    },
+    {
+      "$i": 14,
+      "name": "FIle txt 1 17.txt"
+    },
+    {
+      "$i": 15,
+      "name": "FIle txt 1 18.txt"
+    },
+    {
+      "$i": 16,
+      "name": "FIle txt 1 19.txt"
+    },
+    {
+      "$i": 17,
+      "name": "FIle txt 1 20.txt"
+    },
+    {
+      "$i": 18,
+      "name": "FIle txt 1 21.txt"
+    },
+    {
+      "$i": 19,
+      "name": "FIle txt 1 22.txt"
+    },
+    {
+      "$i": 20,
+      "name": "FIle txt 1 23.txt"
+    },
+    {
+      "$i": 21,
+      "name": "FIle txt 1 24.txt"
+    },
+    {
+      "$i": 22,
+      "name": "FIle txt 1 25.txt"
+    },
+    {
+      "$i": 23,
+      "name": "FIle txt 1 26.txt"
+    },
+    {
+      "$i": 24,
+      "name": "FIle txt 1 27.txt"
+    },
+    {
+      "$i": 25,
+      "name": "French onboarding presentation.pptx"
+    },
+    {
+      "$i": 26,
+      "name": "happy-face.jpg"
+    },
+    {
+      "$i": 27,
+      "name": "happy-face 01.jpg"
+    },
+    {
+      "$i": 28,
+      "name": "key 01.txt"
+    },
+    {
+      "$i": 29,
+      "name": "PseudoX.png"
+    },
+    {
+      "$i": 30,
+      "name": "Screen Shot 2018-05-14 at 4.12.40 PM.png"
+    },
+    {
+      "$i": 31,
+      "name": "Screen Shot 2018-05-14 at 4.12.40 P....png"
+    },
+    {
+      "$i": 32,
+      "name": "Screen Shot 2018-05-14 at 4.12.40 P....png"
+    },
+    {
+      "$i": 33,
+      "name": "Screen Shot 2018-05-14 at 4.12.40 P....png"
+    },
+    {
+      "$i": 34,
+      "name": "temp.jpg"
+    },
+    {
+      "$i": 35,
+      "name": "temp 01.jpg"
+    },
+    {
+      "$i": 36,
+      "name": "temp 02.jpg"
+    },
+    {
+      "$i": 37,
+      "name": "temp 03.jpg"
+    },
+    {
+      "$i": 38,
+      "name": "temp 04.jpg"
+    },
+    {
+      "$i": 39,
+      "name": "temp 05.jpg"
+    },
+    {
+      "$i": 40,
+      "name": "temp 06.jpg"
+    },
+    {
+      "$i": 41,
+      "name": "temp 07.jpg"
+    },
+    {
+      "$i": 42,
+      "name": "temp 08.jpg"
+    },
+    {
+      "$i": 43,
+      "name": "temp 09.jpg"
+    },
+    {
+      "$i": 44,
+      "name": "test.txt"
+    },
+    {
+      "$i": 45,
+      "name": "test 01.txt"
+    },
+    {
+      "$i": 46,
+      "name": "test 02.txt"
+    },
+    {
+      "$i": 47,
+      "name": "test 03.txt"
+    },
+    {
+      "$i": 48,
+      "name": "test 05.txt"
+    },
+    {
+      "$i": 49,
+      "name": "test 06.txt"
+    },
+    {
+      "$i": 50,
+      "name": "test 07.txt"
+    },
+    {
+      "$i": 51,
+      "name": "test 08.txt"
+    },
+    {
+      "$i": 52,
+      "name": "test 09.txt"
+    },
+    {
+      "$i": 53,
+      "name": "test 10.txt"
+    },
+    {
+      "$i": 54,
+      "name": "test 17.txt"
+    },
+    {
+      "$i": 55,
+      "name": "test 19.txt"
+    },
+    {
+      "$i": 56,
+      "name": "test 20.txt"
+    },
+    {
+      "$i": 57,
+      "name": "test 21.txt"
+    },
+    {
+      "$i": 58,
+      "name": "test 45.txt"
+    },
+    {
+      "$i": 59,
+      "name": "test 46.txt"
+    },
+    {
+      "$i": 60,
+      "name": "test 47.txt"
+    },
+    {
+      "$i": 61,
+      "name": "test 48.txt"
+    },
+    {
+      "$i": 62,
+      "name": "test 49.txt"
+    },
+    {
+      "$i": 63,
+      "name": "test 50.txt"
+    },
+    {
+      "$i": 64,
+      "name": "test 68.txt"
+    }
+  ],
+  "folders": [
+    {
+      "$i": 0,
+      "name": "adan"
+    },
+    {
+      "$i": 1,
+      "name": "hhh"
+    },
+    {
+      "$i": 2,
+      "name": "smiley"
+    },
+    {
+      "$i": 3,
+      "name": "Tag"
+    },
+    {
+      "$i": 4,
+      "name": "test"
+    },
+    {
+      "$i": 5,
+      "name": "test 01"
+    },
+    {
+      "$i": 6,
+      "name": "test 02"
+    },
+    {
+      "$i": 7,
+      "name": "test 05"
+    }
+  ],
+  "isSubDir": true,
+  "isUploaded": true,
+  "path": "root / branch / tree"
+}

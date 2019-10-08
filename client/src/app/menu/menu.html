@@ -1,0 +1,25 @@
+<ion-menu [content]="content" id="menu-component">
+    <ion-header data-comp-id="header.1">
+        <ion-toolbar color="primary" data-comp-id="toolbar.1" menuClose="" style="">
+            <ion-title data-comp-id="title.1">
+                <span data-comp-id="text.1" ion-text="">Menu</span>
+            </ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content data-comp-id="content.1" menuClose="">
+        <ion-list data-comp-id="list.1">
+            <ion-item (click)="action('upload')" *ngIf="!isHome()" data-comp-id="item.1"
+                menuClose="">
+                <ion-icon class="ion-md-arrow-round-up" color="primary" data-comp-id="icon.1"
+                    item-start="" style=""></ion-icon>
+                <div data-comp-id="text.2" ion-text="">Upload Files</div>
+            </ion-item>
+            <ion-item (click)="action('files')" data-comp-id="item.2" menuClose="">
+                <ion-icon class="ion-ios-albums" color="primary" data-comp-id="icon.2"
+                    item-start="" style=""></ion-icon>
+                <div data-comp-id="text.3" ion-text="">List of Files</div>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+<ion-nav #content=""></ion-nav>

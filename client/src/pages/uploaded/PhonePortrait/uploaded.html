@@ -1,0 +1,49 @@
+<ion-header data-comp-id="header.1">
+    <ion-navbar color="primary" data-comp-id="navbar.1" style="">
+        <ion-buttons data-comp-id="buttons.1" left="">
+            <button (click)="action('back')" data-comp-id="button.1" icon-only=""
+                ion-button="">
+                <ion-icon class="ion-ios-arrow-back"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title data-comp-id="title.1">
+            <span data-comp-id="text.1" ion-text="">Uploaded Files</span>
+        </ion-title>
+        <ion-buttons data-comp-id="buttons.2" right=""></ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content data-comp-id="content.1">
+    <ion-list data-comp-id="list.1">
+        <ion-item color="dark" data-comp-id="item.1"
+            style="border-bottom: 0px none rgb(255, 255, 255);">
+            <span data-comp-id="text.2" ion-text="" left="" style="font-size: 15px;">
+                <b>Viewing:</b>
+                {{data.path}}</span>
+        </ion-item>
+    </ion-list>
+    <ion-list-header color="balanced" data-comp-id="list-header.1" style="">
+        <span data-comp-id="text.3" ion-text="">Folders</span>
+    </ion-list-header>
+    <ion-list data-comp-id="list.2" style="margin: -1px 0px 20px;">
+        <ion-item (click)="action('folders[item].openFolder', [i])"
+            *ngFor="let item of data.folders;let i = index" color="light"
+            data-comp-id="item.2" style="">
+            <div [innerHTML]="item.name" color="black" data-comp-id="text.4" ion-text=""
+                style=""></div>
+            <ion-icon class="ion-ios-arrow-forward" color="contrast" data-comp-id="icon.1"
+                item-end="" style=""></ion-icon>
+        </ion-item>
+    </ion-list>
+    <ion-list-header color="light" data-comp-id="list-header.2"
+        style="border-top: 0.546875px solid rgb(200, 199, 204);">
+        <span data-comp-id="text.5" ion-text="">Files</span>
+    </ion-list-header>
+    <ion-list data-comp-id="list.3">
+        <ion-item (click)="action('files[item].download', [i])"
+            *ngFor="let item of data.files;let i = index" data-comp-id="item.3">
+            <div [innerHTML]="item.name" data-comp-id="text.6" ion-text=""></div>
+            <ion-icon class="ion-ios-arrow-forward" color="primary" data-comp-id="icon.2"
+                item-end="" style=""></ion-icon>
+        </ion-item>
+    </ion-list>
+</ion-content>

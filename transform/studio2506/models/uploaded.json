@@ -1,0 +1,105 @@
+{
+  "type": "object",
+  "properties": {
+    "files": {
+      "type": "array",
+      "id": "uploaded.files",
+      "name": "files",
+      "element": {
+        "0": {},
+        "context": {},
+        "length": 1
+      },
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "id": "uploaded.files.name",
+            "name": "name",
+            "element": {
+              "0": {},
+              "context": {},
+              "length": 1
+            },
+            "pageModelName": "uploaded",
+            "selector": "td.fname a[title]",
+            "control": "property.innerText"
+          },
+          "download": {
+            "type": "action",
+            "id": "uploaded.files.download",
+            "name": "download",
+            "element": {
+              "0": {},
+              "context": {},
+              "length": 1
+            },
+            "pageModelName": "uploaded",
+            "selector": "td.fname a[title]",
+            "control": "action.click"
+          }
+        }
+      },
+      "pageModelName": "uploaded",
+      "selectorAll": "table#filelist tr.filerow"
+    },
+    "isUploaded": {
+      "type": "identifier",
+      "control": "url.https://encodable.com/uploaddemo/?action=listfiles"
+    },
+    "upload": {
+      "type": "action",
+      "control": "action.click",
+      "selector": "a[href='/uploaddemo/']"
+    },
+    "folders": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "selector": "td.dname a[title]",
+            "control": "property.innerText"
+          },
+          "openFolder": {
+            "type": "action",
+            "selector": "td.dname a[title]",
+            "control": "action.click"
+          }
+        }
+      },
+      "selectorAll": "table#filelist tr.dirrow"
+    },
+    "isSubDir": {
+      "type": "boolean",
+      "control": "url.https://encodable.com/uploaddemo/?action=listfiles&path"
+    },
+    "path": {
+      "type": "string",
+      "selector": "div[id='viewpath-text']",
+      "control": "extractPath"
+    },
+    "back": {
+      "type": "action",
+      "selector": "tr.parentrow a",
+      "control": "action.click"
+    }
+  },
+  "connect": [
+    {
+      "match": [
+        "isUploaded",
+        "isUploaded",
+        "isUploaded",
+        "isUploaded",
+        "isUploaded",
+        "isUploaded",
+        "isUploaded"
+      ],
+      "event": "uploaded"
+    }
+  ],
+  "id": "uploaded"
+}

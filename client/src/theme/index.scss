@@ -1,0 +1,29 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/v2/theming/
+$font-path: "../assets/fonts";
+
+@import "ionic.globals";
+
+// Shared Variables
+// --------------------------------------------------
+
+// Named Color Variables
+// --------------------------------------------------
+@import "styles/colors";
+
+// App Theme
+// --------------------------------------------------
+@import "ionic.theme.default";
+
+// Ionicons
+// --------------------------------------------------
+@import "ionic.ionicons";
+
+// Fonts
+// --------------------------------------------------
+@import "roboto";
+@import "noto-sans";
+
+// App Styles
+// --------------------------------------------------
+@import "styles";

@@ -1,0 +1,23 @@
+{
+  "name": "client",
+  "description": "SmartUX client application",
+  "version": "6.0.30",
+  "private": true,
+  "dependencies": {
+    "smartux-client": "git+ssh://git@github.com/powwowinc/smartux-client.git#6.0.30",
+    "components": "../../../components/src",
+    "custom-components": "../../../custom-components/src"
+  },
+  "scripts": {
+    "build": "npm run build:clean && npm run build:bundle",
+    "build:clean": "cd node_modules/smartux-client/build && node clean.js --path ../../.. && cd ../../..",
+    "build:copy": "cd node_modules/smartux-client/build && node copy.js --path ../../.. && cd ../../..",
+    "build:bundle": "npm run build:vendor && npm run build:main",
+    "build:vendor": "cd node_modules/smartux-client/build && node bundle.js --path ../../.. --module vendor && cd ../../..",
+    "build:main": "cd node_modules/smartux-client/build && node bundle.js --path ../../.. --module main --copy-assets --styles && cd ../../..",
+    "build:styles": "cd node_modules/smartux-client/build && node styles.js --path ../../..  && cd ../../.."
+  },
+  "engines": {
+    "node": "8.x.x"
+  }
+}
