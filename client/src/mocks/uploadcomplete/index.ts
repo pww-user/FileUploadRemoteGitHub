@@ -1,3 +1,3 @@
-export let mock_uploadcomplete = { uploadedLink: function uploadedLink(params) {
-        this.go("landing");
-    } };
+export let mock_uploadcomplete = { uploadedLink: async function uploadedLink(params) {
+ await this.go("landing");
+ } };

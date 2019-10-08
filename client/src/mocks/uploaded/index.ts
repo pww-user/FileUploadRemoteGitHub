@@ -1,7 +1,7 @@
-export let mock_uploaded = { back: function back(params) {
-        this.go("home");
-    },
-    'folders[].download' : function download(params){
-        this.go("landing");
-    }
+export let mock_uploaded = { back: async function back(params) {
+ await this.go("home");
+ },
+ 'folders[].download' : async function download(params){
+ await this.go("landing");
+ }
 };

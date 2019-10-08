@@ -1,5 +1,5 @@
-export let mock_menu = { files: function files(params) {
-        this.go("uploaded");
-    }, upload: function upload(params) {
-        this.go("home");
-    } };
+export let mock_menu = { files: async function files(params) {
+ await this.go("uploaded");
+ }, upload: async function upload(params) {
+ await this.go("home");
+ } };

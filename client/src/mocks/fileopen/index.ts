@@ -1,5 +1,5 @@
 export let mock_fileopen = {
-    back: function back(params) {
-        this.go("landing");
-    }
+ back: async function back(params) {
+ await this.go("landing");
+ }
 };

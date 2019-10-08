@@ -1,5 +1,5 @@
 export let mock_home = {
-    beginUpload: function beginUpload(params) {
-        this.go("uploadcomplete");
-    }
+ beginUpload: async function beginUpload(params) {
+ await this.go("uploadcomplete");
+ }
 };

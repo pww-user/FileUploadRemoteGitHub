@@ -1,9 +1,9 @@
 export let mock_landing = {
-    go: function go(params) {
-        this
-            .go("fileopen");
-    },
-    back: function back(params) {
-        this.go("uploaded");
-    }
+ go: async function go(params) {
+ this
+ .go("fileopen");
+ },
+ back: async function back(params) {
+ await this.go("uploaded");
+ }
 };

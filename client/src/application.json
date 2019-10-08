@@ -3,7 +3,14 @@
   "description": "",
   "defaultLayout": "PhonePortrait",
   "previewToken": "7f80e1f9",
-  "clientVersion": "6.0.30",
+  "clientVersion": "6.1.0",
   "theme": "Anchor",
-  "creatorId": "admin"
+  "creatorId": "admin",
+  "isBuiltInTemplate": false,
+  "screensCount": 6,
+  "creatorName": "PowWow Admin",
+  "explorations": [
+    "studio2506"
+  ],
+  "created": 1570528690140
 }

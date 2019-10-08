@@ -1,5 +1,5 @@
 export let mock_login = {
-    login: function login(params) {
-        this.go("home");
-    }
+ login: async function login(params) {
+ await this.go("home");
+ }
 };
